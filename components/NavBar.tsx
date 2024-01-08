@@ -7,10 +7,6 @@ import Link from "next/link";
 
 const navItems = [
     {
-        path: "/",
-        name: "Home",
-    },
-    {
         path: '/aboutMe',
         name: "About Me",
     },

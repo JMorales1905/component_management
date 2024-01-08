@@ -1,24 +1,44 @@
+'use client'
 import type { Metadata } from 'next'
-import { Lugrasimo } from 'next/font/google'
-import { Great_Vibes } from 'next/font/google'
 import './globals.css'
 
-const lugrasimo = Lugrasimo({ weight: ['400'], style: ['normal'], subsets: ['latin'] })
-const vibes = Great_Vibes({ weight: ['400'], style: ['normal'], subsets: ['latin'] })
+import SplashScreen from '@/components/SplashScreen'
+import { usePathname } from 'next/navigation'
+import React, { useState, useEffect } from "react"
 
-export const metadata: Metadata = {
-  title: 'IkigaiJAM',
-  description: 'Personal Website Portfolio',
-}
+
+// export const metadata: Metadata = {
+//   title: 'IkigaiJAM',
+//   description: 'Personal Website Portfolio',
+// }
 
 export default function RootLayout({
   children,
 }: {
   children: React.ReactNode
 }) {
+
+  const pathName = usePathname()
+  const isHome = pathName === "/"
+  const [isLoading, setIsLoading] = useState(isHome)
+
+  useEffect(() => {
+    if (isLoading) {
+      return
+    }
+  }, [isLoading])
+
   return (
     <html className='bg-Void' lang="en">
-      <body className={lugrasimo.className}>{children}</body>
+      <body>
+        {isLoading && isHome ? (
+          <SplashScreen finishLoading={() => setIsLoading(false)} />
+        ) : (
+          <>
+            {children}
+          </>
+        )}
+      </body>
     </html>
   )
 }
