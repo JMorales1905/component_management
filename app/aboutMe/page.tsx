@@ -54,7 +54,7 @@ export default function Page() {
             {/* INTRO PARAGRAPH */}
             <motion.div
               className="p-10 text-[23px] flex-1 text-center"
-              initial={{ x: -1000 }}
+              initial={{ x: '-100%' }}
               animate={{ x: 0 }}
               transition={{
                 delay: 1,
