@@ -8,6 +8,7 @@ TO DO
 POSSIBLE
 ->add information in the ABOUT ME section <DONE>
 ->Revamp the INTRO section <PROGRESS>
+->preloader transition
 
 This project is built with nextjs 13 using tailwind, js, and 
 Dependecies installed: 

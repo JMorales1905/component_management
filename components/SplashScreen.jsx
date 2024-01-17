@@ -1,7 +1,6 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import anime from "animejs";
-import Logo from "./logo";
 import { motion } from "framer-motion";
 import { Space_Mono } from "next/font/google";
 
