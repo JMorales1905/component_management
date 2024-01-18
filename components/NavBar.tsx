@@ -27,7 +27,7 @@ export default function NavBar() {
 
     return (
         <div className="bg-Void fixed w-full p-[1.5rem] text-white items-center justify-around flex-1 z-10 font-bold flex">
-            <a href='/home' className="flex text-2xl">IkigaiJAM</a>
+            <a href='/home' className="flex text-2xl cursor-pointy2 hover:underline underline-offset-4 decoration-red-300">IkigaiJAM</a>
             <nav className="flex gap-1 relative z-[100] rounded-lg gap-x-8">
                 {navItems.map((item, index) => {
                     const isActive = item.path === pathname;
@@ -35,8 +35,7 @@ export default function NavBar() {
                     return (
                         <Link
                             key={item.path}
-                            className={`px-4 py-2 rounded-md lg:text-xl relative no-underline duration-200 ease-out"
-                                }`}
+                            className={`cursor-pointy2 px-4 py-2 rounded-md lg:text-xl relative hover:underline decoration-red-300 underline-offset-4`}
                             data-active={isActive}
                             href={item.path}
                             onMouseOver={() => setHoveredPath(item.path)}

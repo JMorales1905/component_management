@@ -1,7 +1,7 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import anime from "animejs";
-import { motion } from "framer-motion";
+import { easeIn, easeInOut, motion } from "framer-motion";
 import { Space_Mono } from "next/font/google";
 
 const space = Space_Mono({ subsets: ['latin'], weight: ['400'] })
@@ -30,8 +30,14 @@ const SplashScreen = ({ finishLoading }) => {
       })
       .add({
         targets: "#logo",
-        duration: 900,
-      });
+        duration: 1000,
+      })
+      .add({
+        targets: "#logo",
+        opacity: 0,
+        duration: 2000,
+        easing: 'easeInOutExpo'
+      })
   };
 
   useEffect(() => {
@@ -42,7 +48,7 @@ const SplashScreen = ({ finishLoading }) => {
 
   return (
     <div
-      className={`${space.className} text-[40px] grid h-screen items-center content-center justify-center bg-Void`}
+      className={`${space.className} cursor-pointy2 text-[40px] grid h-screen items-center content-center justify-center bg-Void`}
       isMounted={isMounted}
     >
       <div id="logo">
@@ -82,9 +88,12 @@ const SplashScreen = ({ finishLoading }) => {
           </motion.svg>
         </div>
       </div>
-      <p className="text-pink-200 flex justify-center">
-        IkigaiJAM
-      </p>
+      <motion.p
+      initial={{ opacity: 0 }}
+      animate={{ opacity: [0, 1], transition:{duration:3, ease: 'easeInOut'} }}
+      className="text-pink-200 flex justify-center">
+        IkigaiJAM <span className="text-[20px] flex items-end p-2">/Jose Morales</span>
+      </motion.p>
     </div>
   );
 };

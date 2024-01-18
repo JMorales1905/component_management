@@ -13,7 +13,7 @@ export default function Page() {
   return (
     <main className={`${space.className} bg-Void h-screen`}>
       <NavBar />
-      <div className='pt-[150px]'>
+      <div className='pt-[150px] cursor-pointy2'>
 
         {/* INTRO CARD */}
         <motion.div
@@ -28,9 +28,9 @@ export default function Page() {
           }}
         >
           <motion.p>
-            A Little Blast Into My Past!
+            A Little About Me!
           </motion.p>
-          <br /> <br /> so you can get a sense <br />of where I&apos;m
+          <br /> so you can get a sense <br />of where I&apos;m
           coming from <br /><br /> literaly 🕮<br />&<br /> Figuratively ☄
         </motion.div>
         <div className="text-White w-full flex justify-end mt-[50px]">
@@ -45,7 +45,6 @@ export default function Page() {
             }}
             className="bg-opacity-70 text-[20px] w-fit rounded-sm p-2 mt-5 mr-[13rem]
           animate-[pulse_1s_ease-in-out_infinite] uppercase hover:scale-110 transition-transform ease-in-out">
-            &#8615; That&apos;s me
           </motion.div>
         </div>
         <div className="w-full  grid gap-y-4">
@@ -63,22 +62,22 @@ export default function Page() {
                 duration: [.5]
               }}
             >
-              Well met! My name is <span className="bold text-[30px]">Jose Morales</span>. <br />
-              <br />About three years ago, I chose to persue my passion in <span className="underline text-[25px]">programming</span> only, I came to the realization
+              Well met! My name is <span className="hover:text-red-200 bold text-[30px] decoration-red-300 underline-offset-4 underline">Jose Morales</span>. <br />
+              <br />About three years ago, I chose to persue my passion in <span className="underline text-[25px] decoration-red-300 underline-offset-4 hover:text-red-200">coding</span> only, I came to the realization
               that such a hard skill can have hundreds of applications in the professional field. Ultimately, I
-              decided to dedicate it to <span className="underline text-[25px]" >Font-End Development</span>.
+              decided to dedicate it to <br /> <span className="hover:text-red-200 underline decoration-red-300 underline-offset-4 text-[25px]" >Font-End Development</span>.
               <br />
               <br />
-              Though there are dozens of tools a developer can use, my main focus is
-              combining <span className="underline text-[25px]">Tailwindcss</span> and <span className="underline text-[25px]">Nextjs</span> to
+              Though there are dozens of tools a developer can use, my preferred toolset is
+              combining <span className="hover:text-red-200 underline text-[25px] decoration-red-300 underline-offset-4">Tailwindcss</span> and <span className="hover:text-red-200 underline text-[25px] decoration-red-300 underline-offset-4">Nextjs</span> to
               efficently create responsive websites that leave lasting impressions on users.
               <br />
               <br />
-              If you&apos;re still curious, then how about checking out my social media?
+              Still curious, then how about checking out my social media?
               <div className="flex justify-center my-8 gap-8">
-                <a href="https://www.instagram.com/moralesbutmo/"><FaInstagram size='1.5em' className='hover:scale-110 transition-transform ease-in-out' /></a>
-                <a href="https://github.com/JMorales1905/"><FaGithub size='1.5em' className='hover:scale-110 transition-transform ease-in-out' /></a>
-                <a href="https://www.linkedin.com/in/jmorales1905/"><FaLinkedin size='1.5em' className='hover:scale-110 transition-transform ease-in-out' /></a>
+                <a href="https://www.instagram.com/moralesbutmo/"><FaInstagram size='1.5em' className='cursor-pointy2 hover:scale-110 transition-transform ease-in-out' /></a>
+                <a href="https://github.com/JMorales1905/"><FaGithub size='1.5em' className='cursor-pointy2 hover:scale-110 transition-transform ease-in-out' /></a>
+                <a href="https://www.linkedin.com/in/jmorales1905/"><FaLinkedin size='1.5em' className='cursor-pointy2 hover:scale-110 transition-transform ease-in-out' /></a>
               </div>
             </motion.div>
 

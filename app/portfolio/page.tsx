@@ -42,7 +42,7 @@ export default function Page() {
                                 </a>
                                 <div className="mx-auto mt-[50px]">
                                     <Link href='/contact' id="contact">
-                                        <button className="bg-slate-700 uppercase rounded-lg w-fit p-4 hover:bg-slate-500 active:bg-slate-700 text-[20px]">contact</button>
+                                        <button className="bg-transparent uppercase rounded-lg w-fit p-4 hover:bg-slate-500 active:bg-slate-700 text-[20px]">contact</button>
                                     </Link>
                                 </div>
                             </motion.div>

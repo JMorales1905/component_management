@@ -7,10 +7,10 @@ import { usePathname } from 'next/navigation'
 import React, { useState, useEffect } from "react"
 
 
-// export const metadata: Metadata = {
-//   title: 'IkigaiJAM',
-//   description: 'Personal Website Portfolio',
-// }
+const metadata: Metadata = {
+  title: 'IkigaiJAM',
+  description: 'Personal Website Portfolio',
+}
 
 export default function RootLayout({
   children,

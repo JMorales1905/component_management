@@ -8,6 +8,10 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      cursor: {
+        'pointy': 'url(/images/icons8-dot-30.png), pointer',
+        'pointy2': 'url(/images/icons8-dot-24.png), pointer'
+      },
       colors: {
         Gunmetal: '#1F292D',
         AirSuperioriyBlue: '#7AA5B3',
